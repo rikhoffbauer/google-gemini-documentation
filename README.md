@@ -4,6 +4,8 @@
 
 [OK, got it]
 
+This repository contains the source code for the community-driven documentation for the Google Gemini API, hosted at [https://rikhoffbauer.github.io/google-gemini-documentation/](https://rikhoffbauer.github.io/google-gemini-documentation/).
+
 ## Google AI for Developers
 
   * Models
