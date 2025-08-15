@@ -1,16 +1,161 @@
-# Gemini API – Developer Docs Overview
+# Gemini API | Google AI for Developers
 
-**Source:** https://ai.google.dev/gemini-api/docs
+**ai.google.dev uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic. [Learn more](https://policies.google.com/technologies/cookies).**
 
-**Retrieved:** 2025-08-15
+[OK, got it]
 
-## Summary
-Landing page for Gemini API docs: models, capabilities, tooling, pricing, safety, and getting started.
+## Google AI for Developers
 
-## Quick links
-[Gemini models](models.md) • [Overview](overview.md) • [Pricing](pricing.md) • [Rate limits](rate-limits.md)
+  * Models
+    * Gemini
+      * [About](https://ai.google.dev/gemini-api/docs/models/gemini)
+      * [Docs](https://ai.google.dev/gemini-api/docs)
+      * [API reference](https://ai.google.dev/api)
+      * [Pricing](https://ai.google.dev/pricing)
+    * Imagen
+      * [About](https://ai.google.dev/docs/imagen)
+      * [Docs](https://ai.google.dev/docs/imagen/overview)
+      * [Pricing](https://ai.google.dev/pricing)
+    * Veo
+      * [About](https://ai.google.dev/docs/veo)
+      * [Docs](https://ai.google.dev/docs/veo/overview)
+      * [Pricing](https://ai.google.dev/pricing)
+    * Gemma
+      * [About](https://ai.google.dev/gemma)
+      * [Docs](https://ai.google.dev/gemma/docs)
+      * [Gemmaverse](https://ai.google.dev/gemma/docs/gemmaverse)
+  * Solutions
+    * Build with Gemini
+      * [Gemini API](https://ai.google.dev/docs/gemini_api_overview)
+      * [Google AI Studio](https://ai.google.dev/docs/ai_studio_overview)
+    * Customize Gemma open models
+      * [Gemma open models](https://ai.google.dev/gemma)
+      * [Multi-framework with Keras](https://ai.google.dev/gemma/docs/keras_gemma)
+      * [Fine-tune in Colab](https://ai.google.dev/gemma/docs/fine_tuning)
+      * [Run on-device](https://ai.google.dev/edge)
+  * Code assistance
+    * [Android Studio](https://developer.android.com/studio/preview/gemini)
+    * [Chrome DevTools](https://goo.gle/devtools-gemini)
+    * [Colab](https://colab.research.google.com/)
+    * [Firebase](https://firebase.google.com/docs/genkit)
+    * [Google Cloud](https://cloud.google.com/docs/gemini/code-assist)
+    * [JetBrains](https://plugins.jetbrains.com/plugin/22648-google-cloud-code)
+    * [Jules](https://jules.ai/)
+    * [VS Code](https://code.visualstudio.com/docs/editor/artificial-intelligence)
+  * Showcase
+    * [Gemini Showcase](https://ai.google.dev/showcase)
+    * [Gemini API Developer Competition](https://aistudio.google.com/app/competition)
+  * Community
+    * [Google AI Forum](https://discuss.ai.google.dev/)
+    * [Gemini for Research](https://deepmind.google/technologies/gemini/research/)
 
-## Notes
-- See **Pricing** and **Rate limits** for cost and throughput considerations.
-- Prefer the **Google GenAI SDK** unless you have a strong reason to use raw REST or compatibility layers.
-- Review **Safety settings** and **Usage policies** before shipping.
+* * *
+
+### Get a Gemini API Key
+
+Get a Gemini API key and make your first API request in minutes.
+
+**Python**
+```python
+from google import genai
+client = genai.Client()
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="Explain how AI works in a few words"
+)
+print(response.text)
+```
+
+**JavaScript**
+```javascript
+import { GoogleGenAI } from "@google/genai";
+const ai = new GoogleGenAI({});
+async function main() {
+    const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: "Explain how AI works in a few words",
+    });
+    console.log(response.text);
+}
+await main();
+```
+
+**Go**
+```go
+package main
+import (
+    "context"
+    "fmt"
+    "log"
+    "google.golang.org/genai"
+)
+func main() {
+    ctx := context.Background()
+    client, err := genai.NewClient(ctx, nil)
+    if err != nil {
+        log.Fatal(err)
+    }
+    result, err := client.Models.GenerateContent(
+        ctx, "gemini-2.5-flash", genai.Text("Explain how AI works in a few words"), nil,
+    )
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Println(result.Text())
+}
+```
+
+**Java**
+```java
+package com.example;
+import com.google.genai.Client;
+import com.google.genai.types.GenerateContentResponse;
+public class GenerateTextFromTextInput {
+    public static void main(String[] args) {
+        Client client = new Client();
+        GenerateContentResponse response = client.models.generateContent(
+            "gemini-2.5-flash", "Explain how AI works in a few words", null);
+        System.out.println(response.text());
+    }
+}
+```
+
+**REST**
+```bash
+curl "https://generativelaanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent" \
+    -H "x-goog-api-key: $GEMINI_API_KEY" \
+    -H 'Content-Type: application/json' \
+    -X POST \
+    -d '{ "contents": [ { "parts": [ { "text": "Explain how AI works in a few words" } ] } ] }'
+```
+
+### Meet the models
+
+  * **2.5 Pro**
+Our most powerful thinking model with features for complex reasoning and much more
+  * **2.5 Flash**
+Our newest multimodal model, with next generation features and improved capabilities
+  * **2.5 Flash-Lite**
+Our fastest and most cost-efficient multimodal model with great performance for high-frequency tasks
+  * **Veo 3**
+Our state of the art video generation model
+  * **Imagen 4**
+Our highest quality image generation model that creates stunning visuals
+  * **Gemini Embeddings**
+Our first Gemini embedding model, designed for production RAG workflows
+
+### Explore the API
+
+  * **Native Image Generation**
+Generate and edit highly contextual images natively with Gemini 2.0 Flash.
+  * **Explore long context**
+Input millions of tokens to Gemini models and derive understanding from unstructured images, videos, and documents.
+  * **Generate structured outputs**
+Constrain Gemini to respond with JSON, a structured data format suitable for automated processing.
+
+### Start building with the Gemini API
+
+[Get started](https://ai.google.dev/gemini-api/docs/get-started/tutorial?lang=python)
+
+Sources:
+[1] Gemini API | Google AI for Developers (https://ai.google.dev/gemini-api/docs)
