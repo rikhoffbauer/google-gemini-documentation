@@ -13,26 +13,26 @@ This repository contains the source code for the community-driven documentation 
 
   * Models
     * Gemini
-      * [About](https://ai.google.dev/gemini-api/docs/models/gemini)
-      * [Docs](https://ai.google.dev/gemini-api/docs)
+      * [About](models.md)
+      * [Docs](overview.md)
       * [API reference](https://ai.google.dev/api)
-      * [Pricing](https://ai.google.dev/pricing)
+      * [Pricing](pricing.md)
     * Imagen
-      * [About](https://ai.google.dev/docs/imagen)
-      * [Docs](https://ai.google.dev/docs/imagen/overview)
-      * [Pricing](https://ai.google.dev/pricing)
+      * [About](imagen.md)
+      * [Docs](imagen.md)
+      * [Pricing](pricing.md)
     * Veo
-      * [About](https://ai.google.dev/docs/veo)
-      * [Docs](https://ai.google.dev/docs/veo/overview)
-      * [Pricing](https://ai.google.dev/pricing)
+      * [About](video.md)
+      * [Docs](video.md)
+      * [Pricing](pricing.md)
     * Gemma
       * [About](https://ai.google.dev/gemma)
       * [Docs](https://ai.google.dev/gemma/docs)
       * [Gemmaverse](https://ai.google.dev/gemma/docs/gemmaverse)
   * Solutions
     * Build with Gemini
-      * [Gemini API](https://ai.google.dev/docs/gemini_api_overview)
-      * [Google AI Studio](https://ai.google.dev/docs/ai_studio_overview)
+      * [Gemini API](overview.md)
+      * [Google AI Studio](ai-studio-quickstart.md)
     * Customize Gemma open models
       * [Gemma open models](https://ai.google.dev/gemma)
       * [Multi-framework with Keras](https://ai.google.dev/gemma/docs/keras_gemma)
@@ -160,7 +160,7 @@ Constrain Gemini to respond with JSON, a structured data format suitable for aut
 
 ### Start building with the Gemini API
 
-[Get started](https://ai.google.dev/gemini-api/docs/get-started/tutorial?lang=python)
+[Get started](quickstart.md)
 
 Sources:
-[1] Gemini API | Google AI for Developers (https://ai.google.dev/gemini-api/docs)
+[1] Gemini API | Google AI for Developers (overview.md)

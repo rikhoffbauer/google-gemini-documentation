@@ -1,16 +1,43 @@
-# Using Gemini API keys
+# Gemini API Reference
 
-**Source:** https://ai.google.dev/gemini-api/docs/api-key
+This page contains the API reference for the Gemini API.
 
-**Retrieved:** 2025-08-15
+## Authentication
 
-## Summary
-Create and configure API keys for the Gemini API.
+The Gemini API uses API keys for authentication. You can get an API key from
+the Google AI Studio.
 
-## Quick links
-[Google AI Studio quickstart](ai-studio-quickstart.md) • [API versions explained](api-versions.md) • [Gemini API libraries (Google GenAI SDK)](libraries.md) • [Gemini models](models.md) • [Authentication with OAuth quickstart](oauth.md) • [OpenAI compatibility](openai.md) • [Overview](overview.md) • [Pricing](pricing.md) • [Quickstart](quickstart.md) • [Rate limits](rate-limits.md)
+## API Endpoint
 
-## Notes
-- See **Pricing** and **Rate limits** for cost and throughput considerations.
-- Prefer the **Google GenAI SDK** unless you have a strong reason to use raw REST or compatibility layers.
-- Review **Safety settings** and **Usage policies** before shipping.
+The base URL for the Gemini API is:
+
+```
+https://generativelanguage.googleapis.com/
+```
+
+## Models
+
+The following models are available through the Gemini API:
+
+  * `gemini-pro`: A powerful, multimodal model that can understand and generate
+    text, images, and video.
+  * `gemini-pro-vision`: A version of Gemini Pro that is optimized for image
+    understanding.
+  * `embedding-001`: A model that can be used to generate embeddings for text.
+
+## Methods
+
+The following methods are available through the Gemini API:
+
+  * `generateContent`: Generates content from a prompt.
+  * `embedContent`: Generates an embedding for a piece of content.
+  * `countTokens`: Counts the number of tokens in a piece of content.
+
+## Client Libraries
+
+The following client libraries are available for the Gemini API:
+
+  * Python
+  * Node.js
+  * Go
+  * Java

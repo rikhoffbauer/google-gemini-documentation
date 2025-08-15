@@ -1,16 +1,26 @@
-# Imagen (image generation model)
+# Imagen on Vertex AI
 
-**Source:** https://ai.google.dev/gemini-api/docs/imagen
+Imagen is a text-to-image diffusion model that lets you generate and customize high-quality images for a wide range of applications.
 
-**Retrieved:** 2025-08-15
+## Key features
 
-## Summary
-Use Google’s Imagen models for high-fidelity image generation.
+  * **High-quality image generation:** Create novel images and art with a high
+    degree of control.
+  * **Image editing:** Edit images using text prompts, masks, and other tools.
+  * **Image upscaling:** Increase the resolution of images while preserving
+    quality.
+  * **In-image text:** Add text to images.
 
-## Quick links
-[Embeddings](embeddings.md) • [Gemini models](models.md) • [Overview](overview.md) • [Pricing](pricing.md) • [Rate limits](rate-limits.md) • [Veo (video generation)](video.md)
+## Get started
 
-## Notes
-- See **Pricing** and **Rate limits** for cost and throughput considerations.
-- Prefer the **Google GenAI SDK** unless you have a strong reason to use raw REST or compatibility layers.
-- Review **Safety settings** and **Usage policies** before shipping.
+To get started with Imagen on Vertex AI, you can use the following resources:
+
+  * **Quickstart:** Learn how to generate your first image with Imagen.
+  * **Tutorials:** Learn how to use Imagen for a variety of tasks, such as
+    creating product photos, generating logos, and more.
+  * **API reference:** Learn how to use the Imagen API to generate and edit
+    images programmatically.
+
+## Pricing
+
+For information on pricing, see the [Vertex AI pricing page](pricing.md).
