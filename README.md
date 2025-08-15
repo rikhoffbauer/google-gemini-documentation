@@ -1,3 +1,6 @@
+---
+permalink: /
+---
 # Gemini API | Google AI for Developers
 
 **ai.google.dev uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic. [Learn more](https://policies.google.com/technologies/cookies).**
